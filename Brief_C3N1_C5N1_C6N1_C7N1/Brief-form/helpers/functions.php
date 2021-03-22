@@ -17,3 +17,9 @@ function printArray($var)
    echo "</pre>";
    exit;
 }
+
+function createSession($key,$value)
+{
+
+    $_SESSION[$key] = $value;
+}

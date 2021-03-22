@@ -27,7 +27,7 @@ h2{
     transform: translate(-12px, 0px);
     border-radius: 12px 12px 0px 0px;
 }
-input {
+.bord {
     width: 100%;
     height: 50px;
     border-radius: 20px;
@@ -39,7 +39,7 @@ input {
     box-sizing: border-box;
     border: none;
     border-bottom: 2px rgb(247, 129, 60) solid;
-    border-style: none;
+    /* border-style: none; */
 }
 
 .btn
@@ -59,3 +59,5 @@ input {
     top: 287px;
     left: 123px;
 }
+
+
