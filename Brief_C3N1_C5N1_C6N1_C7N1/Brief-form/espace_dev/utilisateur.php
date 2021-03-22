@@ -47,7 +47,7 @@ if(isset($_POST['LOGOUT'])){
     </header>
     <?php  if(isset($_SESSION['user'])) : ?>
 
-<h1>Bienvenue : Mr/Mme <?= $_SESSION['user']  ?></h1>
+<h1 style="color:white">Bienvenue : Mr/Mme <?= $_SESSION['user']  ?></h1>
 
  <?php  endif; ?>
     
