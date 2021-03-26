@@ -1,0 +1,10 @@
+CREATE DATABASE gestion_dev;
+CREATE TABLE developeur (id_dev int(11) primary key auto increment NOT NULL, nom varchar (100), prenom varchar (100),email varchar (100),status varchar (30),password varchar (100));
+CREATE TABLE formation (id_formation int (11) primary key auto increment NOT NULL, techno_name varchar(100), date_formation datetime,dev_id int(11));
+CREATE TABLE technologies (techno_name primary key auto increment NOT NULL,designation varchar (100));
+CREATE TABLE dev_techno (id_dev int(11), techno_name varchar(100),niveau int(11));
+ALTER TABLE formation add constraint fk1 id_dev references developeur(id_dev);
+ALTER TABLE formation add constraint fk1 techno_name references technologies(techno_name);
+ALTER TABLE dev_techno add constraint fk1 id_dev references developeur(id_dev);
+ALTER TABLE dev_techno add constraint fk1 techno_name references technologies(techno_name);
+
