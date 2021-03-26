@@ -33,7 +33,6 @@ $result = mysqli_query($con,$query);
       <th scope="row"><?= $data['id']; ?></th>
       <td><?= $data['lname']; ?></td>
       <td><?= $data['fname']; ?></td>
-      <td><?= $data['email']; ?></td>
     </tr>
 
     <?php endwhile; ?>

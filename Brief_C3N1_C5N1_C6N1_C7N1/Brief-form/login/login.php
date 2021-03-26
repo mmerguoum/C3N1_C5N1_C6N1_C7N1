@@ -1,8 +1,8 @@
 <?php
 
 include '../core/init.php';
-// printArray($_SESSION);
- 
+
+
 if (isset($_POST['enter'])) {
     
 
@@ -11,7 +11,7 @@ if (isset($_POST['enter'])) {
  $pass = trim(strip_tags($_POST["password"]));
 
  
- $query = "SELECT * FROM dev WHERE email = '$email' && password = '$pass'";
+ $query = "SELECT * FROM developeur WHERE email = '$email' && password = '$pass'";
  $result=mysqli_query($conn,$query);
 
 
@@ -26,16 +26,17 @@ if (isset($_POST['enter'])) {
 
             {      
             
-                   createSession("admin",$row['fname']);
+                   createSession("admin",$row['nom']);
                    createSession("admin_id",$row['id_dev']);
-                   header('location: '.BASE_URI.'espace_admin/admin.php');
+                   header('location: '.BASE_URI.'espace_admin/index.php');
             }
 
             else{
                  
-                createSession("user",$row['fname']);
+                createSession("fuser",$row['nom']);
+                createSession("luser",$row['prenom']);
                 createSession('user_id',$row['id_dev']);
-                header('location: '.BASE_URI.'espace_dev/utilisateur.php');
+                header('location: '.BASE_URI.'espace_dev/index.php');
             }  
 
 

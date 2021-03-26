@@ -23,3 +23,11 @@ function createSession($key,$value)
 
     $_SESSION[$key] = $value;
 }
+
+
+function toDate($date)
+{
+
+   return date('Y-m-d',$date);
+
+}
