@@ -21,7 +21,7 @@ if(isset($_POST["enter"]) && !empty($_POST['enter'])){
          if(!$data)
          {
              
-        $insert = "INSERT INTO developeur(nom,prenom,email,status,password) VALUES('$firstName','$lastName','$email', NULL , '$pass')";
+        $insert = "INSERT INTO developeur(nom,prenom,email,status,password) VALUES('$firstName','$lastName','$email', 'dev' , '$pass')";
         $result = mysqli_query($conn,$insert);
 
             if($result){

@@ -5,6 +5,6 @@ CREATE TABLE technologies (techno_name primary key auto increment NOT NULL,desig
 CREATE TABLE dev_techno (id_dev int(11), techno_name varchar(100),niveau int(11));
 ALTER TABLE formation add constraint fk1 id_dev references developeur(id_dev);
 ALTER TABLE formation add constraint fk1 techno_name references technologies(techno_name);
-ALTER TABLE dev_techno add constraint fk1 id_dev references developeur(id_dev);
-ALTER TABLE dev_techno add constraint fk1 techno_name references technologies(techno_name);
+ALTER TABLE dev_techno add constraint fk2 id_dev references developeur(id_dev);
+ALTER TABLE dev_techno add constraint fk3 techno_name references technologies(techno_name);
 

@@ -28,6 +28,7 @@ if (isset($_POST['enter'])) {
             
                    createSession("admin",$row['nom']);
                    createSession("admin_id",$row['id_dev']);
+
                    header('location: '.BASE_URI.'espace_admin/index.php');
             }
 
@@ -36,6 +37,7 @@ if (isset($_POST['enter'])) {
                 createSession("fuser",$row['nom']);
                 createSession("luser",$row['prenom']);
                 createSession('user_id',$row['id_dev']);
+                createSession('email',$row['email']);
                 header('location: '.BASE_URI.'espace_dev/index.php');
             }  
 

@@ -1,6 +1,7 @@
 
 <?php  if(isset($_SESSION)) :  ?>
    
-   <H1 style="color:black">Bienvenue : Mr/Mme <?=  $_SESSION['fuser'];  ?></H1>
+   <div class="infos"><H1 >Bienvenue : Mr/Mme <?=  $_SESSION['fuser'].' '.  $_SESSION['luser'];  ?></H1>
+   <H1 >Votre id  :  <?=  $_SESSION['user_id'];  ?></H1></div>
 
 <?php endif; ?>

@@ -53,7 +53,7 @@ else{
 
 
           <div class="form">
-          <h1 class="comp">Vos compétences</h1><br>
+          <h1 class="comp">COMPETENCES</h1><br>
          <form action="" method="POST" >
             <select id="technologies" name="technos" class="select">
           <option value="tech">Technologies...</option>
@@ -66,6 +66,7 @@ else{
           <br>
           <select id="Niveau" name="niveau" class="select">
           <option value="niv">Votre niveau...</option>
+          <option value="1">-1</option>
           <option value="1">0</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -77,15 +78,6 @@ else{
             </form>
             </div>
         
-            <?php  if(isset($_GET["success"])) : ?>
-        
-                   <h1 style="color:white"><?= $_GET['success']  ?></h1>
-            <?php  endif; ?>
-        
-        
-            <?php  if(isset($_GET["error"])) : ?>
-        
-        <h1 style="color:white"><?= $_GET['error']  ?></h1>
-        <?php  endif; ?>
+           
 
         

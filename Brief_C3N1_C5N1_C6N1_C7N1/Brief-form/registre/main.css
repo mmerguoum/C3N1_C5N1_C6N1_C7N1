@@ -1,5 +1,6 @@
 body{
-    background:url('./tofcop.jpg') no-repeat ;
+    /* background:url('./tofcop.jpg') no-repeat ; */
+    background: rgb(1, 6, 83);
     background-size: cover;   
     background-attachment: fixed;
     background-position: center center;
@@ -38,7 +39,7 @@ input {
     font-weight: bold;
     box-sizing: border-box;
     border: none;
-    border-bottom: 2px rgb(247, 129, 60) solid;
+    border-bottom: 2px rgb(255, 255, 255) solid;
     outline-style: none;
 }
 
