@@ -44,7 +44,7 @@ $id = $_SESSION['user_id'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formation</title>
 </head>
-<body>
+<body></body>
 <h1 class="title">FORMATION</h1>
 <div class="form">
 <form action="" method="POST">

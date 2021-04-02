@@ -79,6 +79,7 @@ if(isset($_POST["enter"]) && !empty($_POST['enter'])){
 <input type="email" name="email" placeholder="E-mail" class="email"><br>
 <input type="password" name="password" placeholder="Password" class="password"><br>
 <input type="submit" name="enter" class="btn" value="Envoyer">
+<a href= "../login/login.php" class = "save">Login in</a>
 
 </div>
 </form> 

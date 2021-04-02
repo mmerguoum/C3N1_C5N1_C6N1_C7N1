@@ -13,8 +13,10 @@ $res= mysqli_query($conn,$query);
 
 if($res === TRUE)
 {
-    echo "Record deleted";
+    echo "'Record deleted'";
+ 
 }
+
 else
 {
     echo "record not deleted";
@@ -22,6 +24,7 @@ else
 }
 
 ?>
+
 
 <table class="zebra"> 
 <thead> 
@@ -44,12 +47,19 @@ else
     <td><?= $row["prenom"] ; ?></td>  
     <td><?= $row["email"] ; ?></td>   
     <td class="delup">
-        <a href="index.php?page=developeur&&update=<?=  $row["id_dev"]; ?>" class = "opt">Update</a>
-        <a href="index.php?page=developeur&&delete=<?= $row['id_dev'] ?>" class = "option"> Delete </a>
+        
+        <a href="index.php?page=developeur&&update=<?= $row["id_dev"]; ?>" class = "opt" >Update</a>
+        <a href="index.php?page=developeur&&delete=<?= $row['id_dev'] ?>" class = "option" onclick='return confirmation();'> Delete </a>
+        
+        
     </td>
 </tr> 
 <?php  endwhile; ?>
 <?php  endif; ?>
-
+<script>
+    function confirmation(){
+        return confirm("voulez-vous vraiment suprimer ce dev? ")
+    }
+</script>
 </tbody> 
 </table> 

@@ -92,6 +92,6 @@ if (isset($_POST['enter'])) {
  <input type="email" name="email" placeholder="E-mail" class="bord" ><br>
  <input type="password" name="password" placeholder="Password" class="bord"><br>
  <input type="submit" name="enter" class="btn" value="Envoyer"><br>
- <a href= "../registre/registre.php" class = "save">inscrivez-vous</a>
+ <a href= "../registre/registre.php" class = "save">Sign in</a>
 </body>
 </html>
