@@ -76,6 +76,10 @@
       tbody tr:nth-child(odd) {
         background: #eee;
       }
+      .cher{
+       font-size: 17px solid;
+       font-weight: bold;
+    }
       .info{
        font-size: 30px solid;
        text-align: center;
@@ -110,6 +114,7 @@
         height: 240px;
         padding: 25px;
         transform: translateY(50%);
+        
     }
     .lab{
         color: white;
@@ -123,3 +128,47 @@
     .sub{
         transform: translate(38px,10px);  
     }
+    .colum{
+        
+        width: 55%;
+        height: 5%;
+        border: 1px;
+        border-radius: 5px;
+        padding: 8px 15px 8px 15px;
+        margin: 10px 0px 15px 0px;
+        box-shadow: 1px 1px 2px 1px grey;
+    }
+    .btn{
+        background: rgb(179, 179, 179);
+        width: 20%;
+        height: 5%;
+        border : 1px;
+        border-radius: 5px;
+        padding: 8px 15px 8px 15px;
+        margin: 10px 0px 15px 0px;
+        
+        /* box-shadow: 1px 1px 2px 1px grey; */
+    }
+    .container{
+        
+        border: 3px solid ;
+        border-color: black;
+        height: 375px;
+        transform: translate(75%,50%);
+        width: 40%;
+
+    }
+    .frm{
+        transform: translate(133px, 10px);
+        /* box-sizing: border-box; */
+        width: 100%;
+    }
+    .infos{
+        text-align: center;
+        margin :30px auto;
+        background: rgb(252, 230, 37);
+        width: 40%;
+        border-radius: 8px;
+        
+    }
+    

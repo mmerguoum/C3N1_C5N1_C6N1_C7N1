@@ -73,20 +73,3 @@ $id = $_SESSION['user_id'];
     
 </body>
 </html> 
-<?php
-// include '../core/init.php';
-// if(isset($_POST["submit"])){
-//     $id = $_SESSION['user_id'];
-//     $formation = $_POST["formation"];
-//     $date = $_POST["date"];
-// echo $id. " " . $formation. " ". $date; 
-
-
-// $query = "INSERT INTO `formation` (`dev_id`, `techno_name`, `date_formation`) VALUES ('$id', '$formation', '$date')";
-
-// $result = mysqli_query($conn, $query);
-// if (!$result) {
-//     die("error").mysqli_error($result);
-// }
-// }
-?>

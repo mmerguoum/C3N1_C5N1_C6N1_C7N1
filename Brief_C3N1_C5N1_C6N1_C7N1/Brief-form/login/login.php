@@ -27,6 +27,7 @@ if (isset($_POST['enter'])) {
             {      
             
                    createSession("admin",$row['nom']);
+                   createSession("prenom",$row['prenom']);
                    createSession("admin_id",$row['id_dev']);
 
                    header('location: '.BASE_URI.'espace_admin/index.php');
@@ -92,6 +93,6 @@ if (isset($_POST['enter'])) {
  <input type="email" name="email" placeholder="E-mail" class="bord" ><br>
  <input type="password" name="password" placeholder="Password" class="bord"><br>
  <input type="submit" name="enter" class="btn" value="Envoyer"><br>
- <a href= "../registre/registre.php" class = "save">Sign in</a>
+ <a href= "../registre/registre.php" class = "save">Sign up</a>
 </body>
 </html>

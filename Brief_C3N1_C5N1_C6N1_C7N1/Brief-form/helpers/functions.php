@@ -25,9 +25,24 @@ function createSession($key,$value)
 }
 
 
-function toDate($date)
+function dataQuery($conn,$query)
 {
+     $result = mysqli_query($conn,$query);
+     if($result)
+     {
+        while($data = mysqli_fetch_assoc($result))
+        {
+           return $data;
+        }
+     }
 
-   return date('Y-m-d',$date);
+     return $result;
 
 }
+
+// function toDate($date)
+// {
+
+//    return date('Y-m-d',$date);
+
+// }

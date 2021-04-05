@@ -10,7 +10,7 @@
 
 <h1 class="title">COMPETENCES</h1>
 <form method="POST">
-<label for="site-search">Search developer:</label>
+<label for="site-search" class="cher">Search developer:</label>
 <input type="search" id="site-search" name="q">
 
 <input type="submit" value="search" name="search">
@@ -34,7 +34,7 @@
     <th>Prenom</th> 
     <th>Technologies</th> 
     <th>Niveau</th>
-   
+    
 </tr> 
 </thead> 
 <tbody> 
@@ -47,6 +47,7 @@
     <td><?= $row["prenom"] ; ?></td>  
     <td><?= $row["techno_name"] ; ?></td>   
     <td><?=  $row['niveau'];  ?></td>
+
 </tr> 
 <?php  endwhile; ?>
 <?php  endif; ?>

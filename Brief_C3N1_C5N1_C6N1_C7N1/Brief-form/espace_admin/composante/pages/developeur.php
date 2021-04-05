@@ -48,8 +48,8 @@ else
     <td><?= $row["email"] ; ?></td>   
     <td class="delup">
         
-        <a href="index.php?page=developeur&&update=<?= $row["id_dev"]; ?>" class = "opt" >Update</a>
-        <a href="index.php?page=developeur&&delete=<?= $row['id_dev'] ?>" class = "option" onclick='return confirmation();'> Delete </a>
+        <a href="index.php?page=update&&update=<?= $row["id_dev"]; ?>" class = "opt" >Update</a>
+        <a href="index.php?page=developeur&&delete=<?= $row['id_dev']; ?>" class = "option" onclick='return confirmation()'> Delete </a>
         
         
     </td>

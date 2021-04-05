@@ -66,7 +66,7 @@ else{
           <br>
           <select id="Niveau" name="niveau" class="select">
           <option value="niv">Votre niveau...</option>
-          <option value="1">-1</option>
+          <option value="-1">-1</option>
           <option value="1">0</option>
           <option value="1">1</option>
           <option value="2">2</option>
